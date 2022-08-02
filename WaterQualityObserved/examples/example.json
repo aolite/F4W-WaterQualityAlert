@@ -1,0 +1,10 @@
+{
+    "id": "urn:ngsi-ld:WaterObserved:01",
+    "type": "WaterObserved",
+    "observedAt": "2021-02-18T12:00:00Z",
+    "ph": 21,
+    "NO3": 20,
+    "Turbidity": 17,
+    "enterococci": 15,
+    "e-coli": 10
+}
