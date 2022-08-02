@@ -1,0 +1,35 @@
+{
+    "id": "urn:ngsi-ld:Threshold:01",
+    "type": "Threshold",
+    "dateObserved":{
+        "type": "Property",
+        "value":{
+            "type": "DateTime",
+            "value": "2021-02-18T12:00:00Z"
+        }
+    },
+    "measuredValue": {
+        "type": "Property",
+        "value":{
+            "type": "Number",
+            "value": 15
+        }
+    },
+    "thresholdType": {
+        "type": "Property",
+        "value":{
+            "type": "Text",
+            "value": 15
+        }
+    },
+    "thresholdValue": {
+        "type": "Property",
+        "value":{
+            "type": "Number",
+            "value": 10
+        }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQualityAlert/master/context.jsonld"
+    ]
+}

@@ -14,6 +14,13 @@
         "detectedEventBy": "https://smartdatamodels.org/dataModel.WaterQualityAlert/detectedEventBy",
         "thresholdBreach":"https://smartdatamodels.org/dataModel.Alert/thresholdBreach",
         "detectedActionBy": "https://smartdatamodels.org/dataModel.WaterQualityAlert/validFrom",
-        "schema": "https://smartdatamodels.org/dataModel.WaterQualityAlert/schema"
+        "schema": "https://smartdatamodels.org/dataModel.WaterQualityAlert/schema",
+        "thresholdValue": "https://smartdatamodels.org/dataModel.WaterQualityAlert/thresholdValue",
+        "thresholdType":"https://smartdatamodels.org/dataModel.WaterQualityAlert/thresholdType",
+        "measuredValue":"https://smartdatamodels.org/dataModel.WaterQualityAlert/measuredValue",
+        "dateObserved": "https://smartdatamodels.org/dataModel.WaterQualityAlert/dateObserved",
+        "date": "https://smartdatamodels.org/dataModel.WaterQualityAlert/date",
+        "brand": "https://smartdatamodels.org/dataModel.WaterQualityAlert/brand",
+        "href": "https://smartdatamodels.org/dataModel.WaterQualityAlert/href"
     }
 }

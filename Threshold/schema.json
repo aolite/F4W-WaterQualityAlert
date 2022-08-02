@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "derivedFrom": "",
+    "license": "",
+    "$id": "https://smart-data-models.github.io/XXXsubjectXXX/XXXdataModelXXX/schema.json",
+    "title": "",
+    "description": "",
+    "type": "object",
+    "allOf": [
+    {
+    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+    "properties": {
+    "id": {
+    "type": "string",
+    "description": "Property. Unique identifier of the entity"
+    },
+    "type": {
+    "type": "string",
+    "description": "Property. NGSI Entity type. It has to be Threshold",
+    "enum": [
+    "Threshold"
+    ]
+    },
+    "dateObserved": {
+    "type": "string",
+    "format": "date-time",
+    "description": "Property. Attribute present in data model SeaConditions of subject dataModel.Weather with the description The date and time of this observation in ISO8601 UTC format.. Attribute present in data model BikeLane of subject dataModel.Transportation with the description The date and time of this observation in ISO8601 UTCformat.. Attribute present in data model TrafficFlowObserved of subject dataModel.Transportation with the description The date and time of this observation in ISO8601 UTC format. It can be represented by an specific time instant or by an ISO8601 interval. As a workaround for the lack of support of Orion Context Broker for datetime intervals, it can be used two separate attributes: `dateObservedFrom`, `dateObservedTo`. [DateTime](https://schema.org/DateTime) or an ISO8601 interval represented as [Text](https://schema.org/Text). Attribute present in data model VibrationsObserved of subject dataModel.Building with the description Date and time of the observation in ISO8601. Attribute present in data model AeroAllergenObserved of subject dataModel.Environment with the description The date and time of this observation in ISO8601 UTCformat. It can be represented by a specific time instant or by an ISO8601 interval.. Attribute present in data model ElectroMagneticObserved of subject dataModel.Environment with the description Date and time of this observation represented by an ISO8601 UTC format. It can be represented by an specific time instant or by an ISO8601 interval to separate attributes `dateObservedFrom`, `dateObservedTo`. . Attribute present in data model WaterObserved of subject dataModel.Environment with the description Date and time of this observation represented by an ISO8601 UTC format.. Attribute present in data model PhreaticObserved of subject dataModel.Environment with the description The date and time of this observation in ISO8601 UTC format. Attribute present in data model IndoorEnvironmentObserved of subject dataModel.Environment with the description Date and time of the observation in ISO8601. Attribute present in data model BoatPlacesAvailable of subject dataModel.Ports with the description The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval. Attribute present in data model ItemFlowObserved of subject dataModel.Transportation with the description Date of the observed entity defined by the user.. Attribute present in data model DeviceMeasurement of subject dataModel.Device with the description The date and time of this observation in ISO8601 UTC format. Attribute present in data model Device of subject dataModel.Device with the description Date of the observed entity defined by the user.. Attribute present in data model RevenueCollection of subject dataModel.PublicAccountability with the description The date and time of this observation in ISO8601 UTC format. Attribute present in data model RainFallRadarObservation of subject dataModel.Environment with the description The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval. Attribute present in data model UnmannedAerialVehicleTMSFlightMessage of subject dataModel.UnmannedAerialVehicle with the description Indicates the date/time the observation was recorded.Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**. Attribute present in data model WeatherObserved of subject dataModel.Weather with the description Date of the observed entity defined by the user.. Attribute present in data model AirQualityObserved of subject dataModel.Environment with the description The date and time of this observation in ISO8601 UTCformat. Attribute present in data model WaterQualityObserved of subject dataModel.WaterQuality with the description The date and time of this observation in ISO8601 UTCformat. It can be represented by an specific time instant or by an ISO8601 interval.. Attribute present in data model NoiseLevelObserved of subject dataModel.Environment with the description The date and time of this observation represented by an ISO8601 interval.. Attribute present in data model CrowdFlowObserved of subject dataModel.Transportation with the description The date and time of this observation in ISO8601 UTC format. It can be represented by an specific time instant or by an ISO8601 interval. As a workaround for the lack of support of Orion Context Broker for datetime intervals, it can be used two separate attributes: `dateObservedFrom`, `dateObservedTo`. Attribute present in data model RainFallRadarObserved of subject dataModel.Environment with the description The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval. Attribute present in data model GreenspaceRecord of subject dataModel.ParksAndGardens with the description The date and time of this observation in ISO8601 UTCformat. "
+    },
+    "measuredValue": {
+    "type": "number",
+    "description": "Property. "
+    },
+    "thresholdType": {
+    "type": "string",
+    "description": "Property. "
+    },
+    "thresholdValue": {
+    "type": "number",
+    "description": "Property. "
+    }
+    }
+    }
+    ],
+    "required": [
+    "id",
+    "type"
+    ]
+    }

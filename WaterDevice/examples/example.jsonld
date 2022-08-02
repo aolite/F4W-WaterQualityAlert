@@ -30,5 +30,8 @@
     },
     "date": "2021-02-18T12:00:00Z",
     "brand": "BrandA",
-    "href":"http://example.org:2021/api/WaterDevice01/"
+    "href":"http://example.org:2021/api/WaterDevice01/",
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQualityAlert/master/context.jsonld"
+    ]
 }

@@ -1,0 +1,20 @@
+{
+    "id": "urn:ngsi-ld:Threshold:01",
+    "type": "Threshold",
+    "dateObserved":{
+        "type": "DateTime",
+        "value": "2021-02-18T12:00:00Z"
+    },
+    "measuredValue": {
+        "type": "Number",
+        "value": 15
+    },
+    "thresholdType": {
+        "type": "Text",
+        "value": 15
+    },
+    "thresholdValue": {
+        "type": "Number",
+        "value": 10
+    }
+}

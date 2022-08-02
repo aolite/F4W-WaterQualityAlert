@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "derivedFrom": "",
+    "license": "",
+    "$id": "https://smart-data-models.github.io/XXXsubjectXXX/XXXdataModelXXX/schema.json",
+    "title": "",
+    "description": "",
+    "type": "object",
+    "allOf": [
+    {
+    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+    "properties": {
+    "id": {
+    "type": "string",
+    "description": "Property. Unique identifier of the entity"
+    },
+    "type": {
+    "type": "string",
+    "description": "Property. NGSI Entity type. It has to be WaterDevice",
+    "enum": [
+    "WaterDevice"
+    ]
+    },
+    "location": {
+    "type": "object",
+    "properties": {
+    "type": {
+    "type": "string"
+    },
+    "coordinates": {
+    "type": "array",
+    "items": {
+    "type": "array",
+    "items": {
+    "type": "array",
+    "items": {
+    "type": "number"
+    }
+    }
+    }
+    }
+    },
+    "description": "Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty."
+    },
+    "date": {
+    "type": "string",
+    "format": "date-time",
+    "description": "Property. Attribute present in data model DiagramLayoutVersion of subject dataModel.EnergyCIM with the description Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''. Attribute present in data model DynamicsVersion of subject dataModel.EnergyCIM with the description Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''. Attribute present in data model EquipmentBoundaryVersion of subject dataModel.EnergyCIM with the description Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''. Attribute present in data model EquipmentVersion of subject dataModel.EnergyCIM with the description Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''. Attribute present in data model GeographicalLocationVersion of subject dataModel.EnergyCIM with the description Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''. Attribute present in data model StateVariablesVersion of subject dataModel.EnergyCIM with the description Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''. Attribute present in data model SteadyStateHypothesisVersion of subject dataModel.EnergyCIM with the description Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''. Attribute present in data model TopologyBoundaryVersion of subject dataModel.EnergyCIM with the description Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''. Attribute present in data model TopologyVersion of subject dataModel.EnergyCIM with the description Profile creation date Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05. Default: ''. Attribute present in data model AnimalDisease of subject dataModel.Agrifood with the description Date of diagnosis of the disease by a veterinarian.. Attribute present in data model AnimalMovement of subject dataModel.Agrifood with the description Date of animal movement.. Attribute present in data model Carcass of subject dataModel.Agrifood with the description Carcass modification date.. Attribute present in data model FeedRegistry of subject dataModel.Agrifood with the description Date of supply of food to animals. Attribute present in data model MeatProduct of subject dataModel.Agrifood with the description Date of application. Attribute present in data model VeterinarianTreatment of subject dataModel.Agrifood with the description Date of application. "
+    },
+    "brand": {
+    "type": "string",
+    "description": "Property. "
+    },
+    "href": {
+    "type": "string",
+    "description": "Property. "
+    }
+    }
+    }
+    ],
+    "required": [
+    "id",
+    "type"
+    ]
+    }

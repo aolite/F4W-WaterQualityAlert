@@ -1,0 +1,8 @@
+{
+    "id": "urn:ngsi-ld:Threshold:01",
+    "type": "Threshold",
+    "dateObserved":"2021-02-18T12:00:00Z",
+    "measuredValue": 15,
+    "thresholdType": "UpperBound",
+    "thresholdValue": 10
+}

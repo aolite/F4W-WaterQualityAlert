@@ -1,0 +1,46 @@
+{
+    "id": "urn:ngsi-ld:WaterDevice:01",
+    "type": "WaterDevice",
+    "location": {
+        "type": "geo:json",
+        "value": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        23.6627,
+                        41.88768
+                    ],
+                    [
+                        25.85598,
+                        43.38622
+                    ],
+                    [
+                        23.4899,
+                        43.78691
+                    ],
+                    [
+                        22.35609,
+                        42.28869
+                    ],
+                    [
+                        23.6627,
+                        41.88769
+                    ]
+                ]
+            ]
+        }
+    },
+    "date": {
+        "type": "DateTime",
+        "value": "2021-02-18T12:00:00Z"
+    },
+    "brand": {
+        "type": "Text",
+        "value":"BrandA"
+    },
+    "href":{
+        "type": "Text",
+        "value": "http://example.org:2021/api/WaterDevice01/"
+    }
+}
