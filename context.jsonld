@@ -1,0 +1,19 @@
+{
+    "@context": {
+        "id": "@id",
+        "type": "@type",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/", 
+        "location": "ngsi-ld:location",
+        "name": "https://smartdatamodels.org/name",
+        "description": "http://purl.org/dc/terms/description",
+        "validFrom": "https://smartdatamodels.org/dataModel.RiskManagement/validFrom",
+        "validTo": "https://smartdatamodels.org/dataModel.RiskManagement/validTo", 
+        "observedAt": "https://uri.etsi.org/ngsi-ld/observedAt", 
+        "createdAt": "https://uri.etsi.org/ngsi-ld/createdAt", 
+        "dateIssued": "https://smartdatamodels.org/dataModel.Alert/dateIssued",
+        "detectedEventBy": "https://smartdatamodels.org/dataModel.WaterQualityAlert/detectedEventBy",
+        "thresholdBreach":"https://smartdatamodels.org/dataModel.Alert/thresholdBreach",
+        "detectedActionBy": "https://smartdatamodels.org/dataModel.WaterQualityAlert/validFrom",
+        "schema": "https://smartdatamodels.org/dataModel.WaterQualityAlert/schema"
+    }
+}

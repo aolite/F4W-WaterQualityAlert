@@ -1,0 +1,23 @@
+description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
+contributors:
+-
+ name: Aitor
+ surname: Corchero
+ mail: aitor.corchero@eurecat.org
+ organization: Eurecat Technology Centre. https://eurecat.org
+ project: Fiware4Water. https://www.fiware4water.eu/ 
+ comments:
+-
+ name: Alberto
+ surname: Abella
+ mail: alberto.abella@fiware.org
+ organization: Fiware Foundation. https://www.fiware.org/foundation/ 
+ project: Fiware4Water. https://www.fiware4water.eu/ 
+ comments:
+- 
+ name: Anastasia
+ surname: Moumtzidou
+ mail: moumtzid@iti.gr
+ organization: CERTH. https://www.certh.gr/root.en.aspx 
+ project: Aqua3S. https://aqua3s.eu/ 
+ comments:

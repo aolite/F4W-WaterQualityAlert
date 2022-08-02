@@ -1,0 +1,102 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "derivedFrom": "",
+    "license": "",
+    "$id": "https://smart-data-models.github.io/XXXsubjectXXX/XXXdataModelXXX/schema.json",
+    "title": "",
+    "description": "",
+    "type": "object",
+    "allOf": [
+    {
+    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+    "properties": {
+    "id": {
+    "type": "string",
+    "description": "Property. Unique identifier of the entity"
+    },
+    "type": {
+    "type": "string",
+    "description": "Property. NGSI Entity type. It has to be Action",
+    "enum": [
+    "Action"
+    ]
+    },
+    "location": {
+    "type": "object",
+    "properties": {
+    "type": {
+    "type": "string"
+    },
+    "coordinates": {
+    "type": "array",
+    "items": {
+    "type": "array",
+    "items": {
+    "type": "array",
+    "items": {
+    "type": "number"
+    }
+    }
+    }
+    }
+    },
+    "description": "Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty."
+    },
+    "schema": {
+    "type": "object",
+    "properties": {
+    "data": {
+    "type": "object",
+    "properties": {
+    "message": {
+    "type": "string"
+    }
+    }
+    }
+    },
+    "description": "Property. Attribute present in data model DataResourceFrictionlessData of subject dataModel.FrictionlessData with the description Schema. A schema for this resource. "
+    },
+    "validTo": {
+    "type": "string",
+    "format": "date-time",
+    "description": "Property. Attribute present in data model CyberAnalysis of subject dataModel.RiskManagement with the description The time at which the risk materialziation is started.. Attribute present in data model Mitigation of subject dataModel.RiskManagement with the description The time at which the risk materialization is started.. Attribute present in data model Risk of subject dataModel.RiskManagement with the description The time at which the risk materialization is started.. Attribute present in data model WeatherForecast of subject dataModel.Weather with the description Validity period end date and time.. Attribute present in data model NetworkServiceAlert of subject dataModel.RiskManagement with the description The time at which the risk materialization is started.. Attribute present in data model WeatherAlert of subject dataModel.Weather with the description The end of the validity period for this forecast as a ISO8601 format. Attribute present in data model Alert of subject dataModel.Alert with the description The end of the validity period for this forecast as a ISO8601 format. "
+    },
+    "validFrom": {
+    "type": "string",
+    "format": "date-time",
+    "description": "Property. Attribute present in data model BoatPlacesPricing of subject dataModel.Ports with the description Start date and time of the pricing rules.. Attribute present in data model CyberAnalysis of subject dataModel.RiskManagement with the description The time at which the risk materialziation is finished.. Attribute present in data model Mitigation of subject dataModel.RiskManagement with the description The time at which the risk materialization is finished.. Attribute present in data model Risk of subject dataModel.RiskManagement with the description The time at which the risk materialization is finished.. Attribute present in data model WeatherForecast of subject dataModel.Weather with the description Validity period start date and time.. Attribute present in data model NetworkServiceAlert of subject dataModel.RiskManagement with the description The time at which the risk materialization is finished.. Attribute present in data model AirQualityForecast of subject dataModel.Environment with the description The start of the validity period for this forecast as a ISO8601 format. Attribute present in data model WeatherAlert of subject dataModel.Weather with the description The start of the validity period for this forecast as a ISO8601 format. Attribute present in data model Alert of subject dataModel.Alert with the description The start of the validity period for this forecast as a ISO8601 format. "
+    },
+    "dateIssued": {
+    "type": "string",
+    "format": "date-time",
+    "description": "Property. Attribute present in data model Aircraft of subject dataModel.Aeronautics with the description Date when the meassure was taken. Attribute present in data model FlightNotification of subject dataModel.Aeronautics with the description Date when the notification was created. Attribute present in data model WeatherForecast of subject dataModel.Weather with the description The date and time the forecast was issued by the meteorological bureau in ISO8601 UTC format.. Attribute present in data model WeatherAlert of subject dataModel.Weather with the description The date and time the item was issued in ISO8601 UTC format.. Attribute present in data model Alert of subject dataModel.Alert with the description The date and time the item was issued in ISO8601 UTC format.. "
+    },
+    "createdAt": {
+    "type": "string",
+    "format": "date-time",
+    "description": "Property. "
+    },
+    "observedAt": {
+    "type": "string",
+    "format": "date-time",
+    "description": "Property. Attribute present in data model UnmannedAerialVehicleTMSFlightMessage of subject dataModel.UnmannedAerialVehicle with the description Indicates the date/time of the UAVFlightMessage record.. Attribute present in data model UnmannedAerialVehicleTMSFlightMessageAgent of subject dataModel.UnmannedAerialVehicle with the description Indicates the date/time of the UAVUTMFlightMessageAgent record.. Attribute present in data model UnmannedAerialVehicle of subject dataModel.UnmannedAerialVehicle with the description Indicates the date/time of the latest monitoring report or update.. Attribute present in data model UnmannedAerialVehicleADSB of subject dataModel.UnmannedAerialVehicle with the description Indicates the date/time of the DBS broadcast.. "
+    },
+    "detectedActionBy": {
+    "type": "string",
+    "description": "Property. "
+    }
+    }
+    }
+    ],
+    "required": [
+    "id",
+    "type"
+    ]
+    }
