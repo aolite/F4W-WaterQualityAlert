@@ -1,0 +1,84 @@
+{
+    "id": "urn:ngsi-ld:Action:01",
+    "type": "Action",
+    "location": {
+        "type": "Geoproperty",
+        "value": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        23.6627,
+                        41.88768
+                    ],
+                    [
+                        25.85598,
+                        43.38622
+                    ],
+                    [
+                        23.4899,
+                        43.78691
+                    ],
+                    [
+                        22.35609,
+                        42.28869
+                    ],
+                    [
+                        23.6627,
+                        41.88769
+                    ]
+                ]
+            ]
+        }
+    },
+    "schema": {
+        "type": "Property",
+        "value": {
+            "data": {
+                "message": "Perform Action A"
+            }
+        }
+    },
+    "validTo": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2021-02-18T12:00:00Z"
+        }
+    },
+    "validFrom": {
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2021-02-18T12:00:00Z"
+        }
+    },
+    "dateIssued":{
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2021-02-18T12:00:00Z"
+        }
+    },
+    "createdAt":{
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2021-02-18T12:00:00Z"
+        }
+    },
+    "observedAt":{
+        "type": "Property",
+        "value": {
+            "type": "DateTime",
+            "value": "2021-02-18T12:00:00Z"
+        }
+    },
+    "detectedActionBy": {
+        "type": "Relationship",
+        "value": {
+            "type": "Text",
+            "value": "urn:ngsi-ld:Device:01"
+        }
+    }
+}
